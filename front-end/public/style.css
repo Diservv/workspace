@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; margin: 2em; background: #f7f7f7; }
+h1 { color: #333; }
+form, textarea, div, button, audio { margin-top: 1em; }
+textarea { width: 100%; resize: vertical; }
+label { margin-right: 0.5em; }
+input, select { margin-right: 1em; }
+button { padding: 0.5em 1em; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background: #0056b3; }
