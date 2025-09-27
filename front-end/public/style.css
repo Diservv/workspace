@@ -1,8 +1,28 @@
-body { font-family: Arial, sans-serif; margin: 2em; background: #f7f7f7; }
+body { font-family: Arial, sans-serif; margin: 2em; background: #f7f7f7; color: #222; }
 h1 { color: #333; }
 form, textarea, div, button, audio { margin-top: 1em; }
-textarea { width: 100%; resize: vertical; }
+textarea { width: 100%; resize: vertical; padding: 0.5em; font-size: 1rem; }
 label { margin-right: 0.5em; }
 input, select { margin-right: 1em; }
 button { padding: 0.5em 1em; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
 button:hover { background: #0056b3; }
+
+/* Dark theme */
+body.dark { background: #111; color: #ddd; }
+body.dark button { background: #1e90ff; }
+
+/* Groups configuration */
+#groupsContainer { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 1em; }
+.group-card { border: 1px solid #ccc; padding: 8px; border-radius: 6px; background: #fff; }
+body.dark .group-card { background: #1a1a1a; border-color: #333; }
+
+/* Highlight blue glass pointer */
+.highlight { display: inline-block; padding: 2px 6px; border-radius: 6px; background: rgba(173,216,230,0.25); backdrop-filter: blur(6px); }
+.highlight.active { background: rgba(0,123,255,0.35); box-shadow: 0 2px 8px rgba(0,123,255,0.25); }
+
+/* Audio bar */
+.audio-bar { position: fixed; left: 0; right: 0; bottom: 0; background: #fff; border-top: 1px solid #ddd; padding: 8px; display: flex; align-items: center; gap: 12px; }
+body.dark .audio-bar { background: #101010; border-color: #222; }
+
+.ad-inline { margin-top: 1em; padding: 12px; background: #eee; text-align: center; }
+body.dark .ad-inline { background: #151515; }
